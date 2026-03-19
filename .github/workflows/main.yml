@@ -31,4 +31,4 @@ jobs:
         ACLED_PASSWORD: ${{ secrets.ACLED_PASSWORD}}
 
       run: |
-        python pipelines/update_chirps_gefs.py
+        python main.py
