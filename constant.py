@@ -1,6 +1,4 @@
 import os
-import dotenv
-dotenv.load_dotenv()
 
 # --- CONFIG ---
 API_BASE_URL = "https://acleddata.com/api/acled/read"
