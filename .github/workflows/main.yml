@@ -2,6 +2,7 @@ name: main.yml
 on:
   schedule:
     - cron: '00 8 * * *'
+  workflow_dispatch:
 
 jobs:
   run-script:
@@ -31,4 +32,4 @@ jobs:
         ACLED_PASSWORD: ${{ secrets.ACLED_PASSWORD}}
 
       run: |
-        python pipelines/update_chirps_gefs.py
+        python main.py
